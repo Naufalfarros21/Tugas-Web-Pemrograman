@@ -13,7 +13,7 @@ header {
 }
 
 nav {
-    background-color: #EADBC8;
+    background-color: rgb(210, 224, 251, 0.7);
     padding: 5px;
 
     position: sticky;
@@ -34,7 +34,7 @@ nav a {
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;
-    color: #0F2C59;
+    color: #191717;
 }
 
 nav a:hover {
@@ -54,28 +54,28 @@ main {
     gap: 1rem 2rem;
 }
 
-h2 {
-    color: #0F2C59;
+aside {
+    flex: 1;
 }
 
-p {
-    text-decoration: none;
+h2, h3{
+    color: #0F2C59;
 }
 
 footer {
     padding: 20px;
-    color: #0F2C59;
-    background-color: #EADBC8;
+    color: #191717;
+    background-color: #D2E0FB;
     text-align: center;
     font-weight: bold;
 }
 
 .jumbotron {
+    background: url("../img/background.jpg") center/cover no-repeat;
     font-size: 22px;
     padding: 60px;
-    background-color: #F8F0E5;
     text-align: center;
-    color: #0F2C59;
+    color: #D7E5CA;
 }
 
 .featured-images{
@@ -91,4 +91,93 @@ footer {
     border-radius: 5px;
 
     padding: 20px;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    width: 170px;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.schedule-table th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.schedule-table th {
+    background-color: #f2f2f2;
+}
+
+.note {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px dashed #333;
+    background-color: #f9f9f9;
+    font-style: italic;
+}
+
+
+#comment-section {
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+}
+
+#comment-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#comment-section form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#comment-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#comment-section input[type="text"],
+#comment-section input[type="email"],
+#comment-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#comment-section textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#comment-section input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#comment-section input[type="submit"]:hover {
+    background-color: #0056b3;
 }
