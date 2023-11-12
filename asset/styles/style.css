@@ -18,6 +18,7 @@ nav {
 
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 
 nav ul {
@@ -84,6 +85,46 @@ footer {
 
     object-fit: cover;
     object-position: center;
+}
+
+/* Styling untuk container slider gambar */
+.image-slider {
+    width: 100%; /* Lebar slider mengisi keseluruhan lebar container */
+    height: 300px; /* Sesuaikan dengan tinggi slider yang Anda inginkan */
+    overflow: hidden; /* Menghilangkan gambar yang melebihi tinggi slider */
+    position: relative; /* Mengatur posisi relatif untuk gambar */
+    z-index: 1; /* Menetapkan z-index di bawah navbar */
+}
+
+/* Styling untuk gambar dalam slider */
+.image-slider img {
+    display: none; /* Semua gambar diatur menjadi tidak tampil */
+    width: 100%; /* Lebar gambar mengisi keseluruhan lebar slider */
+    height: 100%; /* Tinggi gambar mengisi keseluruhan tinggi slider */
+    object-fit: contain; /* Menghindari pemotongan gambar */
+    position: absolute; /* Mengatur posisi absolut untuk gambar */
+    top: 0; /* Gambar diletakkan di bagian atas slider */
+    left: 0; /* Gambar diletakkan di bagian kiri slider */
+    transition: opacity 0.5s; /* Efek transisi fading */
+}
+
+/* Menampilkan gambar pertama saat halaman pertama kali dimuat */
+.image-slider img:first-child {
+    display: block;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Pemilihan Gambar Miniatur */
+.thumbnail-slider {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .card{
