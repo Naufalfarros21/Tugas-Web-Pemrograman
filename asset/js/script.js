@@ -56,4 +56,5 @@ document.addEventListener('DOMContentLoaded', function () {
     createSlider(slider4, thumbnails4);
     createSlider(slider5, thumbnails5);
     createSlider(slider6, thumbnails6);
+    
 });
